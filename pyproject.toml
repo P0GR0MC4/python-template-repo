@@ -1,0 +1,13 @@
+[tool.black]
+line-length = 88
+target-version = ['py312']
+include = '\.pyi?$'
+
+[tool.pylint.format]
+max-line-length = 88
+
+[tool.pylint.messages_control]
+disable = ["missing-module-docstring"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
