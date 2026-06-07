@@ -14,20 +14,26 @@ Aby uruchomić projekt na swoim komputerze (instrukcja dla systemu Windows / Pow
    .\venv\Scripts\pip install -r requirements.txt
 
 2. **Uruchomienie aplikacji kalkulatora w konsoli:**
+   ```powershell
   .\venv\Scripts\python cli.py
 
 3. **Instrukcja uruchamiania lintera i testów**
 Formatowanie kodu (Black)
+   ```powershell
   .\venv\Scripts\black cli.py logic tests
 
 Sprawdzanie formatowania (bez modyfikacji plików)
+   ```powershell
   .\venv\Scripts\black --check cli.py logic tests
 
 Analiza statyczna kodu (Pylint)
+   ```powershell
   .\venv\Scripts\pylint cli.py logic tests
 
 Uruchamianie testów jednostkowych (Pytest)
+   ```powershell
   .\venv\Scripts\pytest tests/
+
 4. **Jak działa pipeline CI**
 **Kiedy się uruchamia?**
 Pipeline odpala się automatycznie na serwerach GitHub w dwóch przypadkach:
